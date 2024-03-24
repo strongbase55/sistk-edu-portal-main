@@ -135,3 +135,11 @@ function wasteManagment() {
 function CyberSecurity() {
     window.location.href = "cybersecurity-results.html"
 }
+
+function iot() {
+    window.location.href = "IOT-results.html"
+}
+
+function humanValues() {
+    window.location.href = "cybersecurity-results.html"
+}
