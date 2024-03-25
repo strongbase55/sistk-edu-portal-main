@@ -136,10 +136,10 @@ function CyberSecurity() {
     window.location.href = "cybersecurity-results.html"
 }
 
-function iot() {
+function human() {
     window.location.href = "Human-results.html"
 }
 
-function human() {
+function iot() {
     window.location.href = "IOT-results.html"
 }
