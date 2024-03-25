@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IOT Test</title>
+    <title>Waste Management Unit-1 MCQ Test</title>
     <link rel="stylesheet" href="quiz-styles.css" />
 </head>
+
 
 <body>
     <div id="login-container">
@@ -98,20 +99,15 @@
 
 
 
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyBv1_0HTF0Rwu2SGOeelCZAeJlfJuz5dtw",
-  authDomain: "iot-subject.firebaseapp.com",
-  projectId: "iot-subject",
-  storageBucket: "iot-subject.appspot.com",
-  messagingSenderId: "230197857827",
-  appId: "1:230197857827:web:4e8006b93f6595d2b32b96",
-  measurementId: "G-N378PMHKB2"
-};
-
-
+  const firebaseConfig = {
+    apiKey: "AIzaSyCM_bdeSyVg_kzENM8oQX5CbAH_LtNfTr0",
+    authDomain: "human-values-and-ethics.firebaseapp.com",
+    projectId: "human-values-and-ethics",
+    storageBucket: "human-values-and-ethics.appspot.com",
+    messagingSenderId: "761052344848",
+    appId: "1:761052344848:web:16c55b13dc018da0ec1095",
+    measurementId: "G-QNPNDKYR19"
+  };
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
