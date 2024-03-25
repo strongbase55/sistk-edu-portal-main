@@ -28,7 +28,7 @@ function startQuiz() {
 
     const quizContainer = document.getElementById("quiz-container");
     quizContainer.innerHTML = `
-      <h2>Waste Management Unit-1 MCQ Test</h2>
+      <h2>Human Values And Ethics</h2>
       <p class="highlight-info"><strong>Student Name:</strong> ${name}</p>
       <p class="highlight-info"><strong>Roll Number:</strong> ${rollNumber}</p>
       <p class="highlight-info"><strong>Email Id:</strong> ${email}</p>
@@ -144,7 +144,6 @@ function startQuiz() {
             correctAnswer: "Utilitarianism"
         }
     ];
-
 
 
 
@@ -280,7 +279,7 @@ function closeResultPopup() {
 
 function sendToGoogleSheets(name, rollNumber, totalMarks) {
   const url =
-    "https://script.google.com/macros/s/AKfycbyA5OQegLLQbyT6dgvyQjpkfYrk4yyHHpOMUlUz0kcxfOPAeMBhAk-UeYFboVwuff-Cpw/exec";
+    "https://script.google.com/macros/s/AKfycbwfNGy71GhRzGmU4a7h4Zkfo04sw4UmL9-kK5eoUrqTv3Vxe7YcIMMkXsN2AN5p5PziQQ/exec";
   const data = {
     name: name,
     rollNumber: rollNumber,
