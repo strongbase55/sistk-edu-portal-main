@@ -141,5 +141,5 @@ function iot() {
 }
 
 function humanValues() {
-    window.location.href = "cybersecurity-results.html"
+    window.location.href = ""
 }
