@@ -39,136 +39,112 @@ function startQuiz() {
 
     // Mock questions (replace with your actual quiz questions)
     const questions = [{
-            question: "What is the primary purpose of a firewall in network security?",
-            options: [
-                "To detect and remove viruses",
-                "To monitor network traffic",
-                "To prevent unauthorized access",
-                "To encrypt data transmissions"
-            ],
-            correctAnswer: "To prevent unauthorized access"
+            question: "What is the fundamental principle that emphasizes treating others with fairness, kindness, and respect?",
+            options: ["Integrity", "Empathy", "Compassion", "Ethical behavior"],
+            correctAnswer: "Compassion"
         },
         {
-            question: "Which encryption algorithm is commonly used for securing internet communications?",
-            options: ["RSA", "DES", "AES", "SHA"],
-            correctAnswer: "AES"
+            question: "Which ethical principle suggests that individuals should always tell the truth and be honest in their dealings?",
+            options: ["Integrity", "Justice", "Altruism", "Accountability"],
+            correctAnswer: "Integrity"
         },
         {
-            question: "What is the practice of disguising a message to make it appear as something else called?",
-            options: ["Encryption", "Decryption", "Steganography", "Authentication"],
-            correctAnswer: "Steganography"
+            question: "What is the term for the ethical concept that refers to doing what is right regardless of personal consequences?",
+            options: ["Honesty", "Integrity", "Altruism", "Principle-centered behavior"],
+            correctAnswer: "Principle-centered behavior"
         },
         {
-            question: "What is a common method used by hackers to gain unauthorized access to a system by tricking individuals into providing sensitive information?",
-            options: ["Phishing", "Brute force attack", "DDoS attack", "SQL injection"],
-            correctAnswer: "Phishing"
+            question: "Which ethical theory focuses on the consequences of actions rather than adherence to rules or duties?",
+            options: ["Deontology", "Utilitarianism", "Virtue ethics", "Ethical relativism"],
+            correctAnswer: "Utilitarianism"
         },
         {
-            question: "Which of the following authentication factors is considered the most secure?",
-            options: [
-                "Something you know",
-                "Something you have",
-                "Something you are",
-                "Something you share"
-            ],
-            correctAnswer: "Something you are"
+            question: "What is the ethical principle that suggests individuals should treat others as they would like to be treated themselves?",
+            options: ["Empathy", "Fairness", "Golden Rule", "Situational ethics"],
+            correctAnswer: "Golden Rule"
         },
         {
-            question: "What type of malware is designed to block access to a computer system until a sum of money is paid?",
-            options: ["Spyware", "Adware", "Ransomware", "Worm"],
-            correctAnswer: "Ransomware"
+            question: "Which ethical framework emphasizes the importance of character traits such as honesty, courage, and compassion?",
+            options: ["Utilitarianism", "Deontology", "Virtue ethics", "Ethical egoism"],
+            correctAnswer: "Virtue ethics"
         },
         {
-            question: "What is the term for a software vulnerability that is unknown to the software vendor and has no available patch?",
-            options: ["Zero-day exploit", "Backdoor", "Buffer overflow", "Trojan horse"],
-            correctAnswer: "Zero-day exploit"
+            question: "What is the term for the ethical theory that argues there are no universal moral truths, and what is considered right or wrong depends on the culture or individual?",
+            options: ["Relativism", "Absolutism", "Universalism", "Moral objectivism"],
+            correctAnswer: "Relativism"
         },
         {
-            question: "Which security protocol is used to provide secure communication over a computer network?",
-            options: ["HTTP", "SSL/TLS", "FTP", "DHCP"],
-            correctAnswer: "SSL/TLS"
+            question: "Which ethical principle emphasizes the importance of treating all individuals equally and without discrimination?",
+            options: ["Equality", "Justice", "Altruism", "Fairness"],
+            correctAnswer: "Justice"
         },
         {
-            question: "What is the term for the process of converting plaintext into ciphertext?",
-            options: ["Decryption", "Hashing", "Encoding", "Encryption"],
-            correctAnswer: "Encryption"
+            question: "What is the term for the ethical principle that suggests individuals should act in the best interest of others, even if it means sacrificing personal gain?",
+            options: ["Empathy", "Altruism", "Reciprocity", "Benevolence"],
+            correctAnswer: "Altruism"
         },
         {
-            question: "What is the purpose of a VPN (Virtual Private Network)?",
-            options: [
-                "To protect against malware attacks",
-                "To provide secure remote access to a private network",
-                "To filter unwanted email messages",
-                "To monitor network traffic"
-            ],
-            correctAnswer: "To provide secure remote access to a private network"
+            question: "Which ethical theory asserts that an action is morally right if it aligns with a set of rules, regardless of the consequences?",
+            options: ["Utilitarianism", "Relativism", "Deontology", "Ethical egoism"],
+            correctAnswer: "Deontology"
         },
         {
-            question: "Which cybersecurity concept involves creating multiple layers of defense to protect against different types of threats?",
-            options: ["Intrusion Detection System (IDS)", "Single Sign-On (SSO)", "Defense in Depth", "Two-factor Authentication (2FA)"],
-            correctAnswer: "Defense in Depth"
+            question: "What is the term for the process of reflecting on and analyzing ethical dilemmas to determine the best course of action?",
+            options: ["Ethical reasoning", "Moral deliberation", "Consequential analysis", "Normative evaluation"],
+            correctAnswer: "Ethical reasoning"
         },
         {
-            question: "What is the term for a software program that appears legitimate but performs malicious activities?",
-            options: ["Virus", "Worm", "Trojan horse", "Spyware"],
-            correctAnswer: "Trojan horse"
+            question: "Which ethical principle emphasizes the importance of maintaining confidentiality and respecting the privacy of others?",
+            options: ["Autonomy", "Integrity", "Confidentiality", "Secrecy"],
+            correctAnswer: "Confidentiality"
         },
         {
-            question: "Which type of attack involves an attacker intercepting and altering communication between two parties?",
-            options: ["Man-in-the-middle (MITM) attack", "Distributed Denial of Service (DDoS) attack", "Phishing attack", "SQL injection attack"],
-            correctAnswer: "Man-in-the-middle (MITM) attack"
+            question: "What is the term for the ethical principle that suggests individuals should have the freedom to make their own decisions and choices?",
+            options: ["Autonomy", "Independence", "Liberty", "Sovereignty"],
+            correctAnswer: "Autonomy"
         },
         {
-            question: "What is the term for a security breach where an attacker gains access to restricted areas by exploiting human behavior rather than technical vulnerabilities?",
-            options: ["Social engineering", "Spoofing", "Brute force attack", "Buffer overflow"],
-            correctAnswer: "Social engineering"
+            question: "Which ethical theory argues that individuals should act in a way that maximizes their self-interest, even if it may not benefit others?",
+            options: ["Utilitarianism", "Virtue ethics", "Ethical egoism", "Deontology"],
+            correctAnswer: "Ethical egoism"
         },
         {
-            question: "Which cryptographic technique is used for verifying the integrity of transmitted data?",
-            options: ["Hashing", "Symmetric encryption", "Asymmetric encryption", "Digital signatures"],
-            correctAnswer: "Hashing"
+            question: "What is the ethical principle that emphasizes the importance of individuals being accountable for their actions and decisions?",
+            options: ["Integrity", "Responsibility", "Accountability", "Honesty"],
+            correctAnswer: "Accountability"
         },
         {
-            question: "What is the primary goal of a penetration test?",
-            options: [
-                "To identify and exploit vulnerabilities in a system",
-                "To encrypt sensitive data",
-                "To detect and remove malware",
-                "To simulate a cyberattack and assess system security"
-            ],
-            correctAnswer: "To simulate a cyberattack and assess system security"
+            question: "Which ethical theory suggests that moral judgments should be based on the unique circumstances of each situation rather than universal principles?",
+            options: ["Utilitarianism", "Situational ethics", "Deontology", "Virtue ethics"],
+            correctAnswer: "Situational ethics"
         },
         {
-            question: "Which security principle states that users should have access only to the resources necessary to perform their job functions?",
-            options: ["Least Privilege", "Defense in Depth", "Principle of Least Authority", "Separation of Duties"],
-            correctAnswer: "Least Privilege"
+            question: "What is the term for the ethical principle that asserts individuals should have the right to make decisions about their own lives and bodies?",
+            options: ["Independence", "Autonomy", "Self-determination", "Empowerment"],
+            correctAnswer: "Self-determination"
         },
         {
-            question: "What is the term for a security mechanism that monitors and controls incoming and outgoing network traffic based on predetermined security rules?",
-            options: ["Antivirus", "Firewall", "Intrusion Detection System (IDS)", "Virtual Private Network (VPN)"],
-            correctAnswer: "Firewall"
+            question: "Which ethical principle emphasizes the importance of individuals acting with honesty and truthfulness in all aspects of life?",
+            options: ["Integrity", "Transparency", "Veracity", "Ethical behavior"],
+            correctAnswer: "Integrity"
         },
         {
-            question: "Which of the following is NOT a common authentication factor?",
-            options: [
-                "Something you know",
-                "Something you have",
-                "Something you are",
-                "Something you share"
-            ],
-            correctAnswer: "Something you share"
+            question: "What is the term for the ethical principle that suggests individuals should act in a way that respects the rights and dignity of all human beings?",
+            options: ["Respect for persons", "Human dignity", "Equality", "Human rights"],
+            correctAnswer: "Respect for persons"
         },
         {
-            question: "What is the purpose of a Security Information and Event Management (SIEM) system?",
-            options: [
-                "To prevent malware infections",
-                "To monitor and analyze security events in real-time",
-                "To encrypt network traffic",
-                "To provide secure remote access to a private network"
-            ],
-            correctAnswer: "To monitor and analyze security events in real-time"
+            question: "Which ethical theory emphasizes the cultivation of virtuous character traits, such as honesty, courage, and compassion?",
+            options: ["Utilitarianism", "Deontology", "Virtue ethics", "Ethical relativism"],
+            correctAnswer: "Virtue ethics"
+        },
+        {
+            question: "What is the term for the ethical principle that suggests individuals should act in a way that promotes the greatest good for the greatest number of people?",
+            options: ["Altruism", "Utilitarianism", "Common good", "Social welfare"],
+            correctAnswer: "Utilitarianism"
         }
     ];
+
 
 
 
@@ -304,7 +280,7 @@ function closeResultPopup() {
 
 function sendToGoogleSheets(name, rollNumber, totalMarks) {
   const url =
-    "https://script.google.com/macros/s/AKfycbztsDBE8Z3YWU_-TTQAq-S3Db1k6Iilk5gPV_VZGbVG5d2QBOQL7eusjvMYAV70oHkBpQ/exec";
+    "https://script.google.com/macros/s/AKfycbyA5OQegLLQbyT6dgvyQjpkfYrk4yyHHpOMUlUz0kcxfOPAeMBhAk-UeYFboVwuff-Cpw/exec";
   const data = {
     name: name,
     rollNumber: rollNumber,

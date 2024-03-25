@@ -137,9 +137,9 @@ function CyberSecurity() {
 }
 
 function iot() {
-    window.location.href = "IOT-results.html"
+    window.location.href = "Human-results.html"
 }
 
-function humanValues() {
-    window.location.href = ""
+function human() {
+    window.location.href = "IOT-results.html"
 }
