@@ -304,7 +304,7 @@ function closeResultPopup() {
 
 function sendToGoogleSheets(name, rollNumber, totalMarks) {
   const url =
-    "https://script.google.com/macros/s/AKfycbwcqBhF8FbNlKlvDrf_cvBly2AHc8J7ogHI5odHSfcM04204shy6g7_55XjC23ETgk2FQ/exec";
+    "https://script.google.com/macros/s/AKfycbz58kahukYleCb6Bm_zphpSRx9VR9G70Qs_ejCs7EBieuZjshSqVwF2mnGEDf_2cfJYIQ/exec";
   const data = {
     name: name,
     rollNumber: rollNumber,
