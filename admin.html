@@ -156,56 +156,80 @@
                     </div>
                     <!--------------------------------------------------- 3 Year Tab ------------------------------------------------------>
                     <div class="tab-pane" id="3year">
-                        <h3>3 Year Content</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-                    </div>
-                </div>
-                <!--------------------------------------------------- 4 Year Tab ------------------------------------------------------>
+                        <h3>DEPARTMENTS AND SUBJECTS</h3>
+                        <div class="card" id="cseCard">
+                            <div class="card-header">
+                                Computer Science and Engineering (CSE)
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Subjects:</h5>
+                                <ul class="list-group">
+                                    <li class="list-group-item" id="python" onclick="python()">Python</li>
+                                    <li class="list-group-item" id="java" onclick="java()">Java</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Card for ECE Department -->
+                        <div class="card mt-4">
+                            <div class="card-header">
+                                Electrical Computering Engineering
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Subjects:</h5>
+                                <ul class="list-group">
+                                    <li class="list-group-item" id="iot" onclick="iot()">Internet Of Things</li>
+                                    <li class="list-group-item" id="human" onclick="human()">Human Values And Ethics</li>
+                                </ul>
+                            </div>
+                        </div>
 
-                <div class="tab-pane" id="4year">
-                    <h3>DEPARTMENTS AND SUBJECTS</h3>
-                    <div class="card" id="cseCard">
-                        <div class="card-header">
-                            Computer Science and Engineering (CSE)
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Subjects:</h5>
-                            <ul class="list-group">
-                                <li class="list-group-item" id="wasteManagment" onclick="wasteManagment()">Waste Managment</li>
-                                <li class="list-group-item" id="CyberSecurity" onclick="CyberSecurity()">CyberSecurity</li>
-                            </ul>
-                        </div>
                     </div>
-                    <!-- Card for ECE Department -->
-                    <div class="card mt-4">
-                        <div class="card-header">
-                            Electrical Computering Engineering
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Subjects:</h5>
-                            <ul class="list-group">
-                                <li class="list-group-item" id="iot" onclick="iot()">Internet Of Things</li>
-                                <li class="list-group-item" id="human" onclick="human()">Human Values And Ethics</li>
-                            </ul>
-                        </div>
-                    </div>
+                    <!--------------------------------------------------- 4 Year Tab ------------------------------------------------------>
 
+                    <div class="tab-pane" id="4year">
+                        <h3>DEPARTMENTS AND SUBJECTS</h3>
+                        <div class="card" id="cseCard">
+                            <div class="card-header">
+                                Computer Science and Engineering (CSE)
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Subjects:</h5>
+                                <ul class="list-group">
+                                    <li class="list-group-item" id="wasteManagment" onclick="wasteManagment()">Waste Managment</li>
+                                    <li class="list-group-item" id="CyberSecurity" onclick="CyberSecurity()">CyberSecurity</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Card for ECE Department -->
+                        <div class="card mt-4">
+                            <div class="card-header">
+                                Electrical Computering Engineering
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Subjects:</h5>
+                                <ul class="list-group">
+                                    <li class="list-group-item" id="iot" onclick="iot()">Internet Of Things</li>
+                                    <li class="list-group-item" id="human" onclick="human()">Human Values And Ethics</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </div>
-    <script src="admin.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script>
-        // Add the code to disable the back button
-        window.history.pushState(null, null, window.location.href);
-        window.onpopstate = function() {
+        </div>
+        <script src="admin.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script>
+            // Add the code to disable the back button
             window.history.pushState(null, null, window.location.href);
-        };
-    </script>
+            window.onpopstate = function() {
+                window.history.pushState(null, null, window.location.href);
+            };
+        </script>
 
 </body>
 

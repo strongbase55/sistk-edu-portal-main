@@ -140,6 +140,14 @@ function human() {
     window.location.href = "Human-results.html"
 }
 
+function python() {
+    window.location.href = "python-results.html"
+}
+
 function iot() {
     window.location.href = "IOT-results.html"
+}
+
+function java() {
+    window.location.href = "java-results.html"
 }
