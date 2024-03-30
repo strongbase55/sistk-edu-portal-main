@@ -13,6 +13,50 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
 
+
+    <style>
+        /* Dropdown Button */
+        
+        .dropbtn {
+            cursor: pointer;
+        }
+        /* Dropdown Content (Hidden by Default) */
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #000;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        /* Links inside the dropdown */
+        
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+        /* Change color of dropdown links on hover */
+        
+        .dropdown-content a:hover {
+            color: black;
+            background-color: #fff;
+        }
+        /* Show the dropdown menu on hover */
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+    </style>
+
     <body>
         <section class="header">
             <nav>
@@ -25,7 +69,14 @@
                         <li><a href="#">II Year</a></li>
                         <li><a href="3rd Year\3rd-year.html">III Year</a></li>
                         <li><a href="4th year/4th-year.html">IV Year</a></li>
-                        <li><a href="admin.html">Admin Login</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropbtn">Admin Login &#9662;</a>
+                            <div class="dropdown-content">
+                                <a href="cse-admin.html">CSE Dept</a>
+                                <a href="ece-admin.html">ECE Dept</a>
+                                <a href="eee-admin.html">EEE Dept</a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <i class="fa-solid fa fa-bars" onclick="showMenu()"></i>
