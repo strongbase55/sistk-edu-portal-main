@@ -38,135 +38,157 @@ function startQuiz() {
     });
 
     // Mock questions (replace with your actual quiz questions)
+
+
     const questions = [{
-            question: "What is the primary purpose of a firewall in network security?",
+            question: "What does IoT stand for?",
             options: [
-                "To detect and remove viruses",
-                "To monitor network traffic",
-                "To prevent unauthorized access",
-                "To encrypt data transmissions"
+                "Internet of Technology",
+                "Internet of Telecommunications",
+                "Internet of Things",
+                "Internet of Transfers"
             ],
-            correctAnswer: "To prevent unauthorized access"
+            correctAnswer: "Internet of Things"
         },
         {
-            question: "Which encryption algorithm is commonly used for securing internet communications?",
-            options: ["RSA", "DES", "AES", "SHA"],
-            correctAnswer: "AES"
-        },
-        {
-            question: "What is the practice of disguising a message to make it appear as something else called?",
-            options: ["Encryption", "Decryption", "Steganography", "Authentication"],
-            correctAnswer: "Steganography"
-        },
-        {
-            question: "What is a common method used by hackers to gain unauthorized access to a system by tricking individuals into providing sensitive information?",
-            options: ["Phishing", "Brute force attack", "DDoS attack", "SQL injection"],
-            correctAnswer: "Phishing"
-        },
-        {
-            question: "Which of the following authentication factors is considered the most secure?",
+            question: "Which of the following is a primary concern in IoT security?",
             options: [
-                "Something you know",
-                "Something you have",
-                "Something you are",
-                "Something you share"
+                "Ensuring high-speed internet connection",
+                "Protecting data privacy",
+                "Increasing device battery life",
+                "Improving data processing speed"
             ],
-            correctAnswer: "Something you are"
+            correctAnswer: "Protecting data privacy"
         },
         {
-            question: "What type of malware is designed to block access to a computer system until a sum of money is paid?",
-            options: ["Spyware", "Adware", "Ransomware", "Worm"],
-            correctAnswer: "Ransomware"
-        },
-        {
-            question: "What is the term for a software vulnerability that is unknown to the software vendor and has no available patch?",
-            options: ["Zero-day exploit", "Backdoor", "Buffer overflow", "Trojan horse"],
-            correctAnswer: "Zero-day exploit"
-        },
-        {
-            question: "Which security protocol is used to provide secure communication over a computer network?",
-            options: ["HTTP", "SSL/TLS", "FTP", "DHCP"],
-            correctAnswer: "SSL/TLS"
-        },
-        {
-            question: "What is the term for the process of converting plaintext into ciphertext?",
-            options: ["Decryption", "Hashing", "Encoding", "Encryption"],
-            correctAnswer: "Encryption"
-        },
-        {
-            question: "What is the purpose of a VPN (Virtual Private Network)?",
+            question: "What does the term 'endpoint' refer to in the context of IoT?",
             options: [
-                "To protect against malware attacks",
-                "To provide secure remote access to a private network",
-                "To filter unwanted email messages",
-                "To monitor network traffic"
+                "Central server managing IoT devices",
+                "The final destination of data transmission",
+                "Individual IoT device connected to the network",
+                "The encryption key used for securing IoT communications"
             ],
-            correctAnswer: "To provide secure remote access to a private network"
+            correctAnswer: "Individual IoT device connected to the network"
         },
         {
-            question: "Which cybersecurity concept involves creating multiple layers of defense to protect against different types of threats?",
-            options: ["Intrusion Detection System (IDS)", "Single Sign-On (SSO)", "Defense in Depth", "Two-factor Authentication (2FA)"],
-            correctAnswer: "Defense in Depth"
-        },
-        {
-            question: "What is the term for a software program that appears legitimate but performs malicious activities?",
-            options: ["Virus", "Worm", "Trojan horse", "Spyware"],
-            correctAnswer: "Trojan horse"
-        },
-        {
-            question: "Which type of attack involves an attacker intercepting and altering communication between two parties?",
-            options: ["Man-in-the-middle (MITM) attack", "Distributed Denial of Service (DDoS) attack", "Phishing attack", "SQL injection attack"],
-            correctAnswer: "Man-in-the-middle (MITM) attack"
-        },
-        {
-            question: "What is the term for a security breach where an attacker gains access to restricted areas by exploiting human behavior rather than technical vulnerabilities?",
-            options: ["Social engineering", "Spoofing", "Brute force attack", "Buffer overflow"],
-            correctAnswer: "Social engineering"
-        },
-        {
-            question: "Which cryptographic technique is used for verifying the integrity of transmitted data?",
-            options: ["Hashing", "Symmetric encryption", "Asymmetric encryption", "Digital signatures"],
-            correctAnswer: "Hashing"
-        },
-        {
-            question: "What is the primary goal of a penetration test?",
+            question: "Which of the following is NOT a typical component of an IoT ecosystem?",
             options: [
-                "To identify and exploit vulnerabilities in a system",
-                "To encrypt sensitive data",
-                "To detect and remove malware",
-                "To simulate a cyberattack and assess system security"
+                "Sensors",
+                "Gateways",
+                "Cloud computing",
+                "Bluetooth earphones"
             ],
-            correctAnswer: "To simulate a cyberattack and assess system security"
+            correctAnswer: "Bluetooth earphones"
         },
         {
-            question: "Which security principle states that users should have access only to the resources necessary to perform their job functions?",
-            options: ["Least Privilege", "Defense in Depth", "Principle of Least Authority", "Separation of Duties"],
-            correctAnswer: "Least Privilege"
-        },
-        {
-            question: "What is the term for a security mechanism that monitors and controls incoming and outgoing network traffic based on predetermined security rules?",
-            options: ["Antivirus", "Firewall", "Intrusion Detection System (IDS)", "Virtual Private Network (VPN)"],
-            correctAnswer: "Firewall"
-        },
-        {
-            question: "Which of the following is NOT a common authentication factor?",
+            question: "What is a 'botnet' in the context of IoT security?",
             options: [
-                "Something you know",
-                "Something you have",
-                "Something you are",
-                "Something you share"
+                "A network of interconnected sensors",
+                "A group of IoT devices infected with malware and controlled by a malicious actor",
+                "A secure communication protocol for IoT devices",
+                "A cloud-based storage solution for IoT data"
             ],
-            correctAnswer: "Something you share"
+            correctAnswer: "A group of IoT devices infected with malware and controlled by a malicious actor"
         },
         {
-            question: "What is the purpose of a Security Information and Event Management (SIEM) system?",
+            question: "What security measure can help prevent unauthorized access to IoT devices?",
             options: [
-                "To prevent malware infections",
-                "To monitor and analyze security events in real-time",
-                "To encrypt network traffic",
-                "To provide secure remote access to a private network"
+                "Using default passwords",
+                "Implementing multi-factor authentication",
+                "Disabling automatic updates",
+                "Sharing device access with multiple users"
             ],
-            correctAnswer: "To monitor and analyze security events in real-time"
+            correctAnswer: "Implementing multi-factor authentication"
+        },
+        {
+            question: "What is data encryption's role in IoT security?",
+            options: [
+                "To increase data transmission speed",
+                "To reduce the power consumption of IoT devices",
+                "To protect data from unauthorized access or tampering",
+                "To improve the compatibility of IoT devices"
+            ],
+            correctAnswer: "To protect data from unauthorized access or tampering"
+        },
+        {
+            question: "Which protocol is commonly used for communication between IoT devices and the cloud?",
+            options: [
+                "HTTP",
+                "FTP",
+                "MQTT",
+                "DNS"
+            ],
+            correctAnswer: "MQTT"
+        },
+        {
+            question: "What is a 'zero-day vulnerability' in the context of IoT security?",
+            options: [
+                "A security flaw that has been known for a long time",
+                "A vulnerability that only affects IoT devices manufactured in the last year",
+                "A newly discovered security flaw for which no patch is available",
+                "A vulnerability caused by outdated firmware"
+            ],
+            correctAnswer: "A newly discovered security flaw for which no patch is available"
+        },
+        {
+            question: "What is the purpose of firmware updates for IoT devices?",
+            options: [
+                "To increase the device's physical durability",
+                "To add new features to the device",
+                "To improve the device's user interface",
+                "To patch security vulnerabilities and bugs"
+            ],
+            correctAnswer: "To patch security vulnerabilities and bugs"
+        },
+        {
+            question: "Which of the following is a potential security risk associated with IoT devices?",
+            options: [
+                "Increased energy efficiency",
+                "Data breaches due to weak authentication",
+                "Enhanced user convenience",
+                "Improved accessibility for people with disabilities"
+            ],
+            correctAnswer: "Data breaches due to weak authentication"
+        },
+        {
+            question: "What is 'tamper detection' in the context of IoT security?",
+            options: [
+                "The process of encrypting IoT data",
+                "A feature that alerts users when someone tries to physically manipulate a device",
+                "A method for securely pairing IoT devices with each other",
+                "The practice of monitoring network traffic for suspicious activities"
+            ],
+            correctAnswer: "A feature that alerts users when someone tries to physically manipulate a device"
+        },
+        {
+            question: "Which of the following is NOT a common IoT communication protocol?",
+            options: [
+                "TCP/IP",
+                "Bluetooth",
+                "Zigbee",
+                "LoRaWAN"
+            ],
+            correctAnswer: "TCP/IP"
+        },
+        {
+            question: "What is the term for the practice of exploiting IoT devices to launch large-scale cyberattacks?",
+            options: [
+                "Cyber espionage",
+                "Cyber terrorism",
+                "Distributed Denial of Service (DDoS) attack",
+                "Data exfiltration"
+            ],
+            correctAnswer: "Distributed Denial of Service (DDoS) attack"
+        },
+        {
+            question: "What is the primary purpose of IoT security frameworks?",
+            options: [
+                "To standardize the physical design of IoT devices",
+                "To create interoperability between different IoT ecosystems",
+                "To provide guidelines and best practices for securing IoT systems",
+                "To regulate the pricing of IoT devices"
+            ],
+            correctAnswer: "To provide guidelines and best practices for securing IoT systems"
         }
     ];
 
@@ -304,7 +326,7 @@ function closeResultPopup() {
 
 function sendToGoogleSheets(name, rollNumber, totalMarks) {
   const url =
-    "https://script.google.com/macros/s/AKfycbwfNGy71GhRzGmU4a7h4Zkfo04sw4UmL9-kK5eoUrqTv3Vxe7YcIMMkXsN2AN5p5PziQQ/exec";
+    "https://script.google.com/macros/s/AKfycbyNAD2XDGtZLUJtjjqy4D2cGBLulNWTbkZAkg5neYfiyXY9qn96hhcLgzXIaVV3NBLr/exec";
   const data = {
     name: name,
     rollNumber: rollNumber,
