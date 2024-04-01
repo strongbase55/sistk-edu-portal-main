@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malware Detection</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            /* Replace 'background.jpg' with your image path */
+            background-size: 100%;
+            /* Cover half of the page vertically */
+            background-size: cover;
+            color: #fff;
+            background: #000;
+        }
+        
+        .main {
+            height: 100vh;
+            max-width: 100%;
+            background-color: #00b3ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        .container {
+            width: 500px;
+            margin: 200px auto;
+            padding: 20px;
+            background-color: rgb(130, 11, 11);
+            /* Semi-transparent black background */
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+            text-decoration: none;
+            font-weight: 1000;
+            text-shadow: 1px 2px pink;
+            font-size: 60px;
+            text-align: center;
+        }
+        
+        p {
+            color: white;
+            text-align: justify;
+            max-width: 1000px;
+        }
+        
+        .input-container {
+            margin-bottom: 20px;
+        }
+        
+        input[type="file"] {
+            margin-right: 10px;
+            display: block;
+            text-align: center;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            /* Green */
+            text-align: center;
+            margin: auto;
+            display: block;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .result {
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        
+        .malware-detected {
+            background-color: #fff;
+            color: red;
+        }
+        
+        .malware-not-detected {
+            background-color: #fff;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <h1>Future Generations Of Malware detection <br> Using genetic Algorithm</h1>
+        <p>This project used for detecting rare classes of malware as well as possible and potential future mutations caused by metamorphic engines. Many of the malware classes we focused on are extremely rare and obfuscated. We were able to collect and
+            acquire some relevant data for these classes from real time datasets. The method utilizes genetic algorithms (GA),aiming to improve detection accuracy.
+        </p>
+    </div>
+
+
+    <div class="container">
+        <h1>Malware Detection</h1>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <div class="input-container">
+                <input type="file" name="file" id="file" accept=".apk" required>
+                <button type="submit">Upload</button>
+            </div>
+        </form>
+        {% if result %}
+        <div class="result {% if result == 'malware detected' %} malware-detected {% else %} malware-not-detected {% endif %}">
+            {{ result }}
+        </div>
+        {% endif %}
+    </div>
+</body>
+
+</html>
