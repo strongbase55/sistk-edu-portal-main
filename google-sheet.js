@@ -1,4 +1,4 @@
-const sheetName = 'IOT';
+const sheetName = 'spreedsheet';
 const scriptProp = PropertiesService.getScriptProperties();
 
 function intialSetup() {
